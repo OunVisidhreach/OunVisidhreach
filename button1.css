@@ -1,0 +1,64 @@
+a.nv{
+      transform:translate(-50%,-50%);
+      width:340px;
+      height:50px;
+      background:transparent;
+      text-align:center;
+      line-height:40px;
+      border-radius:40px;
+      color:white;
+      text-transform: uppercase;
+      text-decoration:none;
+      letter-spacing:2px;
+      transition:0.1s;
+      overflow:hidden;
+  }
+  a.nv:hover{
+      color:#fff;
+      box-shadow:-5px 0 10px rgba(022,20,152,1), 5px 0 5px rgba(122,0,255,1);
+      text-shadow: 0 0 5px rgba(255,255,255,0.50),0 0 25px rgba(255,255,255,0.50),0 0 35px rgba(255,255,255,0.50);
+      overflow: hidden;
+    }
+  a.nv:before{
+      position: absolute;
+      top:0;
+      left:0;
+      content: '';
+      width:40px;
+      height:40px;
+      border-radius:50%;
+      background:rgba(022,20,152,0);
+      filter:blur(4px);
+      transition:0.1s;
+      z-index:-1;
+      overflow: hidden;
+  }
+  a.nv:hover:before{
+      
+      background:rgba(022,20,152,1);
+      transform:scaleX(2);
+      overflow: hidden;
+       
+       
+  }
+  a.nv:after{
+      position: absolute;
+      top:0;
+      right:0;
+      content: '';
+      width:40px;
+      height:40px;
+      border-radius:50%;
+      background:rgba(122,0,255,0);
+      filter:blur(2px);
+      transition:0.1s;
+      z-index:-1;
+      mix-blend-mode: lighten;
+  }
+  a.nv:hover:after{
+      
+      background:rgba(122,0,255,1);
+      transform:scaleX(2);
+       
+       
+  }

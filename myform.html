@@ -1,0 +1,30 @@
+<head>
+      <head>
+            <title>LOGIN FORM</title>
+
+      <script>
+      function input_data()
+      {
+            var name1=document.form.nam.value;
+            var password1=document.form.password.value;
+            if (name1=="")
+            {     
+            alert( "PLEASE!!! INPUT YOUR NAME");
+            return false;
+            }
+            else if(password1.length<6)
+            {     
+            alert("CHARACTER MUST BE MORE THEN 6.");
+            return false;
+            }
+      }
+      </script>
+      </head>
+      <body>
+            <form name="form" method="post" onsubmit="return input_data()">
+            Name: <input type="text" name="nam" pattern="^([a-zA-Z0-9]*)$"><br/>
+            Password: <input type="password" name="password" pattern="^([a-zA-Z0-9]*)$"><br/>
+            <input type="submit" value="register">
+            </form>
+</body>
+</html>

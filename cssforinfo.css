@@ -1,0 +1,240 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'typewriter_condensed_demiRg';
+    font-weight: bolder;
+    height: 100%;
+    background-image: url(./gyme1.jpeg);  
+    background-size: cover;
+    animation-name: back_change;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+}
+@keyframes back_change{
+    0% {background-image: url(./gyme1.jpeg); background-size: cover;}
+    33% {background-image: url(./gyme2.jpg); background-size: cover;}
+    66% {background-image: url(./gyme3.jpg); background-size: cover;}
+}
+.title{
+    left: 90%;
+    align-items: center;
+    position: relative;
+    display: flex;
+    width: 7%;
+    color: white;
+    animation-name: tt_jump;
+    animation-duration: 3s;
+    animation-delay: 2s;
+    animation-fill-mode: both;
+}
+@keyframes tt_jump{
+    0% {left: 90%;}
+    100% {left: 43%;}
+}
+.logo{
+    position: relative;
+    display: flex;
+    width: 4%;
+    align-items: center;
+    animation-name: logo_jump;
+    animation-duration: 3s;
+    animation-delay: 2s;
+    animation-fill-mode: both;
+}
+@keyframes logo_jump{
+    0% {left: 0%;}
+    100% {left: 42%;}
+}
+.title_bar{
+    position: relative;
+    width: auto;
+    color: rgb(13, 13, 255);
+    padding: 10px;
+    font-size: 45px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Lobster';
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px;
+    animation-name: change_color1;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    display: flex;
+    align-items: center;
+}
+@keyframes change_color1{
+    0% {color: rgb(2, 2, 39); background-color: rgba(137, 43, 226, 0.438); left: 2px;}
+    100% {color: darkolivegreen; background-color: rgba(47, 79, 79, 0.589); right: 30px;}
+}
+nav{
+    margin-top: 0px;
+    margin-left: 0px;
+    color: rgb(187, 120, 14);
+    padding: 15px;
+    font-size: 24px;
+    text-transform: uppercase;
+    position: -webkit-sticky;
+    animation-name: change_color;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+@keyframes change_color{
+    0% {color: rgb(255, 255, 255);}
+    25% {color: black;}
+    50% {color: lawngreen;}
+    75% {color: rgb(33, 95, 211);}
+}
+img{
+    width: 150px;
+    border-radius: 50%;
+    /* animation-name: img_roll;
+    animation-duration: 4s;
+    animation-direction: initial;
+    animation-iteration-count: infinite; */
+}
+/* @keyframes img_roll{
+    0% {right: 0; transform: rotate(30);}
+    15% {right: 15; transform: rotate(30);}
+    30% {right: 30; transform: rotate(30);}
+    45% {right: 45; transform: rotate(30);}
+    60% {right: 60; transform: rotate(30);}
+    75% {right: 0; transform: rotate(30);}
+    90% {right: 0; transform: rotate(30);}
+    100% {right: 0; transform: rotate(30);}    
+} */
+
+h4{
+    text-align: center;
+    text-transform: uppercase;
+    color: thistle;
+}
+.text2{
+    top: auto;
+    width: 550px;
+    height: auto;
+    text-align: center;
+    text-emphasis: none;
+    line-height: 25px;
+    padding: 20px;
+    color: rgb(98, 129, 129);
+    transition-duration: 2s;
+    margin-left: 20px;
+    border-radius: 10px;
+}
+.text1:hover{
+    color: white;
+    background-color: blueviolet;
+}
+.text1{
+    margin-left: auto;
+    margin-right: 680px;
+    top: auto;
+    width: 550px;
+    height: auto;
+    text-align: center;
+    line-height: 25px;
+    padding: 20px;
+    color: rgb(13, 83, 83);
+    transition-duration: 2s;
+    border-radius: 10px;
+}
+.text2:hover{
+    color: white;
+    background-color: brown;
+}
+.text3{
+    margin-left: auto;
+    margin-right: 20px;
+    top: auto;
+    width: 550px;
+    height: auto;
+    text-align: justify;
+    text-align: center;
+    text-emphasis: none;
+    line-height: 25px;
+    padding: 20px;
+    color: rgb(13, 83, 83);
+    transition-duration: 2s;
+    border-radius: 10px;
+}
+.text3:hover{
+    color: white;
+    background-color:goldenrod;
+}
+:root {
+    box-sizing: border-box;
+}
+*,
+    ::before,
+    ::after {
+    box-sizing: inherit;
+}
+.main {
+    padding: 0 1.5em;
+    background-color: #fff;
+    border-radius: .5em;
+}
+.media {
+    padding-left: 25px;
+    float: left;
+    margin: 1em 1em 1em 1em;
+    width: calc(20% - 2.5em);
+    height: 350px;
+    padding: 1.5em;
+    background-color: rgba(120, 180, 10, 0.253);
+    border-radius: 0.5em;
+    display: flex;
+}
+.media:hover{
+    background-color: blueviolet;
+    transition-duration: 1s;
+}
+.media:nth-child(::-webkit-meter-even-less-good-value) {
+    clear: left;
+}
+.clearfix::before,
+.clearfix::after {
+    display: table;
+    content: " ";
+}
+.clearfix::after {
+    clear: both;
+}
+.imge{
+    color: darkviolet;
+    text-transform: uppercase;
+}
+.imge:hover{
+    color: black;
+    image-rendering: inherit;
+}
+.add_con{
+    padding-left: 50px;
+    float: left;
+    margin: 1em 1em 1em 1em;
+    width: calc(20% - 2.5em);
+    height: 280px;
+    padding: 1.5em;
+    background-color: rgba(120, 180, 10, 0.253);
+    border-radius: 0.5em;
+    display: flex;
+}
+
+.footer{
+    margin-left: 40%;
+    background-color: black;
+    position: relative;
+    left: 0px;
+    bottom: 0px;
+    padding: 40px;
+    width: 50%;
+    border-radius: 20px;
+    color: white;
+}
+.con_info{
+    margin-left: 30px;
+    line-height: 30px;
+}<link rel="stylesheet" href="stylesheetforwcond.css">
